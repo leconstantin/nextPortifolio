@@ -3,7 +3,6 @@ import Projects from "@/components/home/projects";
 import Skills from "@/components/home/skills";
 import TicTacToe from "@/components/home/tictactoe";
 import Work from "@/components/home/work";
-import Image from "next/image";
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@ import { useState } from "react";
 // 0 1 2
 // 3 4 5
 // 6 7 8
-function Square({ value, onClick }: { value: string; onClick: any }) {
+function Square({ value, onClick }: { value: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
@@ -22,7 +22,7 @@ export default function TicTacToe() {
   const [status, setStatus] = useState("");
   const [colrWinner, setcolrWinner] = useState(false);
 
-  function getWinner(squares: any) {
+  function getWinner(squares: string[]) {
     const winningPatterns = [
       [0, 1, 2],
       [3, 4, 5],
@@ -48,8 +48,8 @@ export default function TicTacToe() {
     return null;
   }
 
-  function handleClick(getCurrentSquare: any) {
-    let cpySquares = [...squares];
+  function handleClick(getCurrentSquare: number) {
+    const cpySquares = [...squares];
     if (getWinner(cpySquares) || cpySquares[getCurrentSquare]) return;
 
     cpySquares[getCurrentSquare] = isXTurn ? "X" : "O";

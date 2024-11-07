@@ -1,8 +1,6 @@
 import { BsTwitterX } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
 import { SiGmail } from "react-icons/si";
 export default function Follow() {
   return (

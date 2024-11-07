@@ -1,4 +1,5 @@
 import { images } from "@/lib";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -14,7 +15,9 @@ export default function Projects() {
               className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl rotate-2"
               key={index}
             >
-              <img
+              <Image
+                width={800}
+                height={800}
                 src={image.src}
                 alt={image.alt}
                 className="absolute inset-0 h-full w-full object-cover"

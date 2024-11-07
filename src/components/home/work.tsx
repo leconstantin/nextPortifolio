@@ -1,5 +1,6 @@
 import { works } from "@/lib";
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 
 export default function Work() {
   return (
@@ -101,7 +102,7 @@ export default function Work() {
           className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 
                      mt-6 w-full"
         >
-          <img src="icons/download.svg" alt="" className="opacity-65 h-5" />
+          <FaDownload size={15} />
           Download cv
         </a>
       </div>

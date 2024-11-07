@@ -12,20 +12,24 @@ export default function Projects() {
         <div className="pt-14 sm:pt-18">
           <div className="max-w-2xl px-1">
             <h1 className="text-4xl font-bold font-roboto  tracking-tight text-zinc-800 sm:text-5xl">
-              Things I've made trying to put my dent in the universe.
+              Things I&apos;ve made trying to put my dent in the universe.
             </h1>
             <p className="mt-6 text-base font-roboto text-zinc-600">
-              I've worked on tons of little projects over the years but these
-              are the ones that I'm most proud of. Many of them are open-source,
-              so if you see something that piques your interest, check out the
-              code and contribute if you have ideas for how it can be improved.
+              I&apos;ve worked on tons of little projects over the years but
+              these are the ones that I&apos;m most proud of. Many of them are
+              open-source, so if you see something that piques your interest,
+              check out the code and contribute if you have ideas for how it can
+              be improved.
             </p>
           </div>
         </div>
         <div className="pt-16">
           <ul className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <li className="group relative flex flex-col items-start transition hover:bg-zinc-100/75 hover:shadow-sm py-6 px-2 md:px-6 rounded-lg">
+            {projects.map((project, index) => (
+              <li
+                className="group relative flex flex-col items-start transition hover:bg-zinc-100/75 hover:shadow-sm py-6 px-2 md:px-6 rounded-lg"
+                key={index}
+              >
                 <div className="flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5">
                   <Image
                     src={project.logo}
