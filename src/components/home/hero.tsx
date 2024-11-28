@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="pt-12 pb-2">
           <h1 className="text-4xl font-roboto font-semibold text-zinc-800 sm:text-3xl flex flex-col justify-center gap-2">
             👋 Hello! I&apos;m Constantin,{" "}
-            <mark className="text-zinc-700 bg-teal-200 w-80">
+            <mark className="text-transparent bg-clip-text bg-gradient-to-r from-teal-800 via-teal-500 to-teal-400 w-80">
               FrontEnd developer
             </mark>{" "}
             <span className="text-lg text-zinc-700 ">
