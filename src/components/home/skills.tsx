@@ -19,7 +19,7 @@ export default function Skills() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 py-5">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 py-5">
         <div className="ring-1 ring-zinc-200  size-20 flex justify-center items-center rounded-xl shadow-md hover:ring-teal-500 hover:scale-110 hover:rotate-3 ease-in duration-300 cursor-pointer">
           <FaHtml5 size={39} />
         </div>
