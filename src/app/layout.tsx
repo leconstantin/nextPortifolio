@@ -19,11 +19,11 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Leo | Constantin",
-    template: "%s - Leo | Constantin",
+    default: "Leo Constantin, Developer",
+    template: "%s - Leo Constantin",
   },
   description:
-    "Academie dela salle is school of excellence and values located in Gicumbi Byumba",
+    "Portifolio of Leo Constantin , a FrontEnd Developer showcasing projects, skills, and experience in web development. Let's build something great together!",
 };
 
 export default function RootLayout({
