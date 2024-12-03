@@ -8,8 +8,8 @@ function Square({ value, onClick }: { value: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className={`ring-1 ring-zinc-300 bg-zinc-200 rounded-md p-10 h-20 w-20 text-3xl  font-semibold flex items-center justify-center ${
-        value == "X" ? "text-teal-400" : "text-black"
+      className={`ring-1 ring-zinc-300 bg-zinc-200 rounded-md p-10 h-20 w-20 text-3xl  font-semibold flex items-center justify-center dark:bg-zinc-900 dark:ring-zinc-600 ${
+        value == "X" ? "text-teal-400" : "text-black dark:text-zinc-200"
       }`}
     >
       {value}
@@ -91,7 +91,7 @@ export default function TicTacToe() {
         </h1>
       </div>
       <div
-        className={`flex flex-col gap-3 items-center  p-2 rounded-lg ring-teal-400 ${
+        className={`flex flex-col gap-3 items-center  p-6 rounded-lg ring-teal-400 dark:ring-teal-900 ${
           colrWinner ? "ring-1" : ""
         }`}
       >

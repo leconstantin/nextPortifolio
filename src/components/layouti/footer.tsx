@@ -6,14 +6,14 @@ export default function Footer() {
     <footer>
       <div
         className="mt-20 flex-none
-        border-t border-zinc-100 pb-20 pt-10"
+        border-t border-zinc-100 pb-20 pt-10 dark:border-zinc-500/70"
       >
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
-            <ul className="flex rounded-full bg-white/90 text-sm font-medium text-zinc-800 ">
+            <ul className="flex text-sm font-medium text-zinc-800 dark:text-zinc-200">
               {navLinks.map((link) => (
                 <Link key={link.id} href={link.path}>
-                  <li className="relative block font-roboto px-2 md:px-4 py-3 transition hover:text-teal-500 cursor-pointer">
+                  <li className="relative block font-roboto px-2 md:px-4 py-3 transition hover:text-teal-500 cursor-pointer dark:hover:text-teal-400">
                     {link.label}
                   </li>
                 </Link>

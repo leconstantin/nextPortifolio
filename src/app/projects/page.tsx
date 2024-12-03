@@ -11,10 +11,10 @@ export default function Projects() {
       <section>
         <div className="pt-14 sm:pt-18">
           <div className="max-w-2xl px-1">
-            <h1 className="text-4xl font-bold font-roboto  tracking-tight text-zinc-800 sm:text-5xl">
+            <h1 className="text-4xl font-bold font-roboto  tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
               Things I&apos;ve made trying to put my dent in the universe.
             </h1>
-            <p className="mt-6 text-base font-roboto text-zinc-600">
+            <p className="mt-6 text-base font-roboto text-zinc-600 dark:text-zinc-400">
               I&apos;ve worked on tons of little projects over the years but
               these are the ones that I&apos;m most proud of. Many of them are
               open-source, so if you see something that piques your interest,
@@ -27,7 +27,7 @@ export default function Projects() {
           <ul className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <li
-                className="group relative flex flex-col items-start transition hover:bg-zinc-100/75 hover:shadow-sm py-6 px-2 md:px-6 rounded-lg"
+                className="group relative flex flex-col items-start transition hover:bg-zinc-100/75 hover:shadow-sm py-6 px-2 md:px-6 rounded-lg dark:hover:bg-zinc-800/50"
                 key={index}
               >
                 <div className="flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5">
@@ -40,11 +40,10 @@ export default function Projects() {
                     height={32}
                   />
                 </div>
-
-                <h2 className="pt-2 text-base font-roboto font-medium text-zinc-800 ">
+                <h2 className="pt-2 text-base font-roboto font-medium text-zinc-800 dark:text-zinc-200">
                   {project.title}
                 </h2>
-                <p className="relative z-10 pt-2 text-sm text-zinc-600 font-roboto">
+                <p className="relative z-10 pt-2 text-sm text-zinc-600 dark:text-zinc-500 font-roboto">
                   {" "}
                   {project.subtitile}
                 </p>

@@ -18,7 +18,7 @@ export default function About() {
                 height={800}
                 src="/images/me.jpeg"
                 alt="My about image"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 p-1 object-cover hover:scale-105 ease-in duration-300"
               />
             </div>
           </div>
