@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "spotlight.tailwindui.com",
       },
+      {
+        protocol: "https",
+        hostname: "vercel.com",
+      },
     ],
   },
 };
