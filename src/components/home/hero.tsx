@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <main>
       <div className="pt-12">
-        <div className="backdrop-blur rounded-full">
+        <div className="backdrop-blur rounded-full ring-2 ring-zinc-200 dark:ring-4 dark:ring-zinc-200  inline-block">
           <Image
             width={500}
             height={500}
@@ -16,11 +16,10 @@ export default function Hero() {
             alt="Leo constantin image"
             title="Muhirwe Leo Constantin"
             loading="lazy"
-            className="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover bg-zinc-300"
+            className="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover bg-zinc-300 dark:bg-zinc-800"
           />
         </div>
       </div>
-
       <div className="max-w-2xl">
         <div className="pt-12 pb-2">
           <h1 className="text-4xl font-roboto font-semibold text-zinc-800 dark:text-zinc-100 sm:text-3xl flex flex-col justify-center gap-2">
@@ -42,9 +41,9 @@ export default function Hero() {
             I&apos;m currently looking for a new role as developer.{" "}
             <mark
               id="hire"
-              className="bg-teal-200 dark:bg-transparent dark:text-zinc-200"
+              className="bg-gradient-to-r from-teal-400 to-teal-700 text-transparent bg-clip-text "
             >
-              Contact me?
+              Contact me ?
             </mark>
           </p>
         </div>
