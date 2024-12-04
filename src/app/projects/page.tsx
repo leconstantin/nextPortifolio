@@ -3,7 +3,7 @@ import { projects } from "@/lib";
 import { Clock } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+
 import { BsGithub } from "react-icons/bs";
 import { IoIosLink } from "react-icons/io";
 
@@ -28,10 +28,9 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        {/* grid-cols-[repeat(auto-fill,_minmax(330px,_1fr))]
-         */}
+
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 gap-6 lg:gap-y-7 pt-16 xl:pt-24">
-          {projects.map((project, i) => (
+          {projects.map((project) => (
             <div
               className="flex flex-col justify-between gap-3 border border-[#00000014] bg-white py-5 pl-6 pr-4 min-h-44 hover:border-zinc-300 rounded-lg ease-in-out duration-500 hover:bg-zinc-100/75 hover:shadow-sm dark:bg-zinc-900 dark:shadow-2xl dark:ring-1 dark:ring-zinc-800 dark:hover:border-zinc-700 dark:hover:bg-zinc-900"
               key={project.id}
